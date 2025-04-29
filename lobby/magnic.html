@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lobby.css">
+</head>
+<body>
+    <style>* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #1a1a1a;
+    }
+    
+    body {
+      background: #f9f9f9;
+      line-height: 1.6;
+    }
+    
+    header {
+      background: linear-gradient(to right, #2c3e50, #4ca1af);
+      color: #fff;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      border-radius: 0 0 20px 20px;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    
+    nav ul li {
+      cursor: pointer;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    
+    nav ul li:hover {
+      color: #ddd;
+    }
+    
+    .menu-icon {
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #fff;
+    }
+    
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    .header-content h1 {
+      font-size: 3rem;
+      color: #fff;
+    }
+    
+    .header-content p {
+      color: #e0e0e0;
+      margin: 1rem 0;
+    }
+    
+    button {
+      padding: 0.7rem 1.5rem;
+      background: #e67e22;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    
+    button:hover {
+      background: #cf711f;
+    }
+    
+    .atom-icon {
+      font-size: 4rem;
+      color: #fff;
+    }
+    
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+    
+    .about .content-block {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    }
+    
+    .equation {
+      font-size: 2rem;
+      font-family: monospace;
+      background: #f0f0f0;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .topics .icons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    
+    .icons .icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+    }
+    
+    .topics .icons > div {
+      flex: 1 1 120px;
+      text-align: center;
+      background: #fff;
+      padding: 1.2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+    }
+    
+    .topics .icons > div:hover {
+      transform: translateY(-5px);
+    }
+    
+    .teachers .teacher-block {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      margin-top: 1rem;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    
+    .teachers img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+
+    @media (max-width: 768px) {
+      nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #2c3e50;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 0;
+        display: none;
+        z-index: 100;
+      }
+    
+      nav ul.show {
+        display: flex;
+      }
+    
+      .menu-icon {
+        display: block;
+      }
+    }</style>
+
+<header>
+    <nav>
+      <ul>
+        <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png" width="50" alt="">
+        <a href="lobby.html"><li>Главная</li></a>
+        <a href="o-nas2.html"><li>О нас</li></a>
+        <a href="kyrs.html"><li>Курсы</li></a>
+      </ul>
+      <div class="menu-icon"> </div>
+    </nav>
+    <div class="header-content">
+      <div>
+        <h1>Урок физики</h1>
+        <p>Изучение основ физики</p>
+      </div>
+      <div class="atom-icon" >🧲</div>
+    </header>
+      <section class="about">
+        
+        <h2>О Магнитизм</h2>
+        <div class="content-block">
+          <p>
+            🧲 Что такое магнетизм?
+            Магнетизм — это явление, при котором некоторые материалы (например, железо) притягиваются магнитом.
+            Он связан с движением электрических зарядов и магнитными полями, которые возникают вокруг них.
+            <br><br>
+            ⚙️ Основные факты:
+            Магнит всегда имеет два полюса — северный и южный.
+            <br><br>
+            Одноимённые полюса отталкиваются, разноимённые — притягиваются.
+            <br><br>
+            Земля сама по себе — огромный магнит (поэтому компасы работают).
+            <br>    <br>
+            Электрический ток в проводе тоже создаёт магнитное поле — это основа работы электродвигателей.
+            <br><br>
+            🔍 Где используется магнетизм?
+            В компасах
+            <br><br>
+            В динамо-машинах и электродвигателях
+            <br><br>
+            В магнитах, громкоговорителях, твердотельных накопителях (жёсткие диски)
+          </p>
+          <div class="equation"> <img src="https://magnets-shop.com/image/catalog/blog/article17/800F412C-2A52-4CD0-838C-DC53DE5499EA.jpeg" width="300" alt=""></div>
+          <a href="lobby.html"> <button>Вернуться на Главную страницу</button></a>
+        </div>
+      </section>
+     
+    </div>
+  
+</body>
+</html>
